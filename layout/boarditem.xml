@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    android:background="@drawable/ing"
+    android:id="@+id/itemarea">
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="출발지"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_margin="10dp"
+        android:src="@drawable/right_arrow"/>
+    <TextView
+        android:id="@+id/arrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="도착지"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+    <ImageView
+        android:layout_width="70px"
+        android:layout_height="70px"
+        android:layout_margin="5dp"
+        android:src="@drawable/user"/>
+    <TextView
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="1/2"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/boardstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="모집중"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="@drawable/ingstatus"/>
+</LinearLayout>

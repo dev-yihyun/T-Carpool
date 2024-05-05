@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="70px"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/bottomline"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backaction"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrowiosback" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25px"
+            android:text="게시글 작성"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/boardstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/statusing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="모집" />
+
+                <RadioButton
+                    android:id="@+id/statuslight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="번개" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="출발지"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputStart"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_margin="10px"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:height="150px"
+                android:background="@color/inputbg"
+                android:hint="출발지를 입력해 주세요."
+                android:paddingLeft="50px"
+                android:textColorHint="@color/dimgray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="도착지"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputarrive"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_margin="10px"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:height="150px"
+                android:background="@color/inputbg"
+                android:hint="도착지를 입력해 주세요."
+                android:paddingLeft="50px"
+                android:textColorHint="@color/dimgray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="모임장소"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputplace"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:layout_margin="10px"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:height="150px"
+                android:background="@color/inputbg"
+                android:hint="모임장소를 입력해 주세요."
+                android:paddingLeft="50px"
+                android:textColorHint="@color/dimgray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="시간"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TimePicker
+                android:id="@+id/inputTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" >
+            </TimePicker>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="날짜"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/inputDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인원 수"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/inputPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="계좌번호"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:background="@drawable/bottomline">
+                <EditText
+                    android:id="@+id/inputbankname"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_margin="10px"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:height="150px"
+                    android:background="@color/inputbg"
+                    android:hint="은행명 입력"
+                    android:paddingLeft="50px"
+                    android:textColorHint="@color/dimgray"/>
+                <EditText
+                    android:id="@+id/inputaccount"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="140px"
+                    android:layout_margin="10px"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:height="150px"
+                    android:background="@color/inputbg"
+                    android:hint="계좌번호 입력 "
+                    android:paddingLeft="50px"
+                    android:textColorHint="@color/dimgray"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/inputcontentt"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10px"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="20px"
+                android:height="150px"
+                android:gravity="left|top"
+                android:background="@color/inputbg"
+                android:hint="설명을 작성해 주세요. "
+                android:paddingLeft="50px"
+                android:textColorHint="@color/dimgray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/writeFinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:background="@color/yellow"
+                    android:text="작성완료"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/writeCancle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20px"
+                    android:layout_weight="1"
+                    android:background="#EFE8CE"
+                    android:text="작성취소"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="75px"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backaction"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrowiosback"
+            android:background="#00000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_margin="25px"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30px">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="20px"
+                android:id="@+id/inputID"
+                android:paddingLeft="50px"
+                android:hint="아이디를 입력해 주세요."
+                android:textColorHint="@color/dimgray"
+                android:background="@color/inputbg"/>
+            <TextView
+                android:id="@+id/inputIDerror"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="5~10자의 영문 소문자,숫자만 사용 가능합니다."
+                android:textSize="35px"
+                android:textColor="@color/red"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="비밀번호"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="20px"
+                android:id="@+id/inputPW"
+                android:paddingLeft="50px"
+                android:hint="비밀번호를 입력해 주세요."
+                android:textColorHint="@color/dimgray"
+                android:background="@color/inputbg"/>
+            <TextView
+                android:id="@+id/inputPWerror"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:textSize="35px"
+                android:text="5~10자의 영문 소문자,숫자만 사용 가능합니다."
+                android:textColor="@color/red"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="이름"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="20px"
+                android:id="@+id/inputNAME"
+                android:paddingLeft="50px"
+                android:hint="본인의 이름을 입력해 주세요."
+                android:textColorHint="@color/dimgray"
+                android:background="@color/inputbg"/>
+            <TextView
+                android:id="@+id/inputNAMEerror"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:textSize="35px"
+                android:text="한글과 영문 대 소문자를 사용하세요.(특수기호,공백 사용불가)"
+                android:textColor="@color/red"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="이메일"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="20px"
+                android:id="@+id/inputEMAIL"
+                android:paddingLeft="50px"
+                android:hint="이메일를 입력해 주세요."
+                android:textColorHint="@color/dimgray"
+                android:background="@color/inputbg"/>
+            <TextView
+                android:id="@+id/inputEMAILerror"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:textSize="35px"
+                android:text="이메일 형식이 아닙니다.  다시 확인해 주세요."
+                android:textColor="@color/red"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="휴대전화"
+                android:layout_marginTop="20px"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginTop="20px"
+                android:id="@+id/inputPHONE"
+                android:paddingLeft="50px"
+                android:hint="전화번호를 입력해 주세요.('-' 제외)"
+                android:textColorHint="@color/dimgray"
+                android:background="@color/inputbg"/>
+            <TextView
+                android:id="@+id/inputPHONEerror"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:textSize="35px"
+                android:text="형식에 맞지 않는 번호입니다."
+                android:textColor="@color/red"/>
+
+            <Button
+                android:id="@+id/signinbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/yellow"
+                android:text="가입하기"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

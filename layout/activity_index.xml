@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomline"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mylocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40px"
+            android:layout_weight="1"
+            android:text="하단동"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/gotowrite"
+            android:layout_width="75px"
+            android:layout_height="75px"
+            android:layout_gravity="center"
+            android:layout_margin="40px"
+            android:background="@drawable/write" />
+
+    </LinearLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <!-- 게시글 목록 -->
+                <LinearLayout
+                    android:id="@+id/tabHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30px"
+                            android:orientation="vertical">
+
+                            <ListView
+                                android:id="@+id/mainListView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="#ffffff"
+                                android:dividerHeight="10dp"
+                                android:fadingEdge="none">
+
+                            </ListView>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+
+                <!-- 신청 목록 -->
+                <LinearLayout
+                    android:id="@+id/tabApplication"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30px"
+                            android:orientation="vertical">
+
+                            <ListView
+                                android:id="@+id/applicationListView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="#ffffff"
+                                android:dividerHeight="10dp"
+                                android:fadingEdge="none">
+
+                            </ListView>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <!-- 나의 목적지 -->
+                <LinearLayout
+                    android:id="@+id/tabDestination"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="30px"
+                    android:orientation="vertical">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30px"
+                            android:orientation="vertical">
+
+                            <ListView
+                                android:id="@+id/DestinationListView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="#ffffff"
+                                android:dividerHeight="10dp"
+                                android:fadingEdge="none">
+
+                            </ListView>
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F3E3AE" />
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

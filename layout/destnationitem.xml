@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="left"
+    android:background="@drawable/bottomline"
+    android:id="@+id/itemarea">
+    <ImageView
+        android:id="@+id/userimage"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_margin="5dp"
+        android:src="@drawable/user"
+        android:padding="20px"
+        android:background="@drawable/circle_yellow_button"/>
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="사용자 ID"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/arrivestatus"
+        android:padding="10px"
+        android:layout_margin="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="미도착"/>
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/moneyaccount"
+        android:layout_margin="10px"
+        android:padding="10px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:text="완료"/>
+</LinearLayout>
